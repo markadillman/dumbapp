@@ -1,0 +1,203 @@
+package markdillman.dbtestapp;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.ActivityCompat;
+import android.os.Bundle;
+import android.widget.TextView;
+import android.widget.LinearLayout;
+import android.widget.EditText;
+
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
+import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
+import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.provider.BaseColumns;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CursorAdapter;
+import android.widget.SimpleCursorAdapter;
+
+
+public class MainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
+
+    private GoogleApiClient mGoogleApiClient;
+    public LocationRequest mLocationRequest;
+    private Location mLastLocation;
+    private LocationListener mLocationListener;
+    private TextView mLatText;
+    private TextView mLonText;
+    boolean coarsePerm;
+    boolean finePerm;
+    private static final int LOCATION_PERMISSION_RESULT = 24;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        if (mGoogleApiClient == null){
+            mGoogleApiClient = new GoogleApiClient.Builder(this)
+                    .addConnectionCallbacks(this)
+                    .addOnConnectionFailedListener(this)
+                    .addApi(LocationServices.API)
+                    .build();
+        }
+
+        mLatText = (TextView)findViewById(R.id.templat);
+        mLonText = (TextView)findViewById(R.id.templon);
+
+        mLocationRequest = LocationRequest.create();
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        mLocationRequest.setInterval(5000);
+        mLocationRequest.setFastestInterval(5000);
+
+        mLocationListener = new LocationListener() {
+            @Override
+            public void onLocationChanged(Location location){
+                mLatText.setText("In Location Listener!");
+                if (location!=null){
+                    mLonText.setText(String.valueOf(location.getLongitude()));
+                    mLatText.setText(String.valueOf(location.getLatitude()));
+                }
+            }
+        };
+    }
+
+    @Override
+    public void onConnected(@Nullable Bundle bundle){
+        if (ActivityCompat.checkSelfPermission(this,android.Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
+                android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
+        {
+            ActivityCompat.requestPermissions(this, new String[] {android.Manifest.permission.ACCESS_COARSE_LOCATION,
+                    android.Manifest.permission.ACCESS_FINE_LOCATION},LOCATION_PERMISSION_RESULT);
+        }
+        if (ActivityCompat.checkSelfPermission(this,android.Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
+                android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
+        {
+            //if permissions denied or revoked, set coordinates (last known) to OSU
+            setDefaultCoords(mLastLocation);
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        mGoogleApiClient.connect();
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        mGoogleApiClient.disconnect();
+        super.onStop();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        if (requestCode == LOCATION_PERMISSION_RESULT) {
+            if (grantResults.length > 0){
+                getCoordinates();
+            }
+        }
+        //else getCoordinates();
+        return;
+    }
+
+    private void setDefaultCoords(Location loc){
+        //loc.setLatitude(44.5);
+        //loc.setLongitude(-123.2);
+    }
+
+    private boolean validPerms(){
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
+                == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
+                android.Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            //if permissions denied or revoked, set coordinates (last known) to OSU
+            return true;
+        }
+        else return false;
+    }
+
+    @Override
+    public void onConnectionFailed(@Nullable ConnectionResult connectionResult){
+        Dialog connectionError = GoogleApiAvailability.getInstance().getErrorDialog(this, connectionResult.getErrorCode(),0);
+        connectionError.show();
+        return;
+    }
+
+    @Override
+    public void onConnectionSuspended(int cause){
+
+    }
+
+    private void getCoordinates(){
+        if (!validPerms()){
+            mLonText.setText("Invalid perms.");
+           return;
+        }
+        else {
+            if (mLastLocation!=null) {
+                mLonText.setText(String.valueOf(mLastLocation.getLongitude()));
+                mLatText.setText(String.valueOf(mLastLocation.getLatitude()));
+
+            }
+            else {
+                LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, mLocationListener);
+            }
+        }
+    }
+
+    final class DBContract {
+
+        private DBContract(){};
+
+        public final class DemoTable implements BaseColumns{
+            public static final String DB_Name = "demo_db";
+            public static final String TABLE_NAME = "demo";
+            public static final String COLUMN_NAME_DEMO_STRING = "demo_string";
+            public static final String COLUMN_NAME_DEMO_LAT = "demo_lat";
+            public static final String COLUMN_NAME_DEMO_LON = "demo_lon";
+            public static final int DB_VERSION = 4;
+
+            public static final String SQL_CREATE_DEMO_TABLE = "CREATE TABLE" +
+                    DemoTable.TABLE_NAME + "(" + DemoTable._ID + " INTEGER PRIMARY KEY NOT NULL," +
+                    DemoTable.COLUMN_NAME_DEMO_STRING + " VARCHAR(255)," +
+                    DemoTable.COLUMN_NAME_DEMO_LAT + " DOUBLE," +
+                    DemoTable.COLUMN_NAME_DEMO_LON + " DOUBLE;";
+
+            public static final String SQL_DROP_DEMO_TABLE = "DROP TABEL IF EXISTS " + DemoTable.TABLE_NAME;
+        }
+
+        class SQLiteExample extends SQLiteOpenHelper {
+            @Override
+            public void onCreate(SQLiteDatabase db){
+                db.execSQL(DBContract.DemoTable.SQL_CREATE_DEMO_TABLE);
+
+                ContentValues testValues = new ContentValues();
+                testValues.put(DBContract.demoTabe.COLUMN_NAME_)
+            }
+        }
+
+    }
+
+}

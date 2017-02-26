@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_3c2a01b0e83d4b90d1774a7fa46cb695b2f0ba30/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9cbb73eb0ce172c3956090e991c7cc5c8507f24b">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2d659ffdb722f243c9437f5a4ca3ce0b45f45684/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.8.0_0406943c1197c6325f98df44ed9d7ea8b7aa886b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f2d240dd085626f03f759c41d628a0c8b63e491f">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.8.0_aaea08f09ef7e88bf0f3db3c4cfdeacf9117b19d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_f86181b9d643638c42d15e227449fc48b1677ad5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15e59454416c6341bd3ed2533b585cd340682dd1">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.8.0_eabe21aefe9861b29569260aecf93778cdb0f0a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_0935b7c2d6895724676a3700ddef4050612d42f5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="85299bf1924dde0200109a58033c5ef84ecb6991">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.8.0_86838cc430417a65728affd7f223ac71bf94ddf9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e9b2cfdfd59b03643f1e240668275378b96615a8">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.8.0_28301607009cdd2066090d91290f023f8fbe78e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="50e35ae101a679c4c8ef3dda075b1df9d5d947d9">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.8.0_5b4065d72c8305e2ac5d74f7077674fed1a16752/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_9f40b7db853ea9b09ef5ffed0c7239dc602323bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.8.0_d57f6a52253e72d248378a185578b33d10063462/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a1ed98e01bd58976d80c062fd0ea2968a1ff68a1">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.8.0_982420b80332116660d76e2a64dabb8b885bf8a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_cbeab1c8448da7ec915fa2ad016a5093a78638bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="16afe57c1d7f8165d107c7806ce7b0c71de87159">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.8.0_399b58d7a72a4fc57a1899fe71697d4d063fc2db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="679251204de40ace98776a6f4e3a649c27e3d89f">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.8.0_2e023de266fc38f74b71fa3cfcfeaf91e42087b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_2fd45ad448ee77b8df459ee46f47e42ad3ff982b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d3035050a075484cbf2e33f1ce1f779bae4d451">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.8.0_15caebf77658be19d14901a4c0af234e4b44dd63/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_55eacd3d2cfb2bb9c9474c6ee1983e75729810fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.8.0_083feeededebbc5621d724aa5847321d3f5eb04d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c81df6bd515398ebe45089b0b16c55752a131f6a">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.8.0_268774f8303f88a4ba9c1936ee571657b9b86d25/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec9104b53aee77dfcfd2fe1c4add23ff7c4df55f">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.8.0_9d199dccff9ba2f075a7bf2dd54524e30ca4e93d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="266570862e5792ef3c51143a8b8593cf54fac68d">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.8.0_59f76c6120638c09d5f98a0336ebc0c25a970448/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_c75b4278583c1d5b2e2c9bc7398958641ebf8439/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cef85cfc7df40e29fbea58844dd4c1e7d0b15542">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.8.0_3dbc606c98857b8b458b10c822c812dc9cfb553b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.8.0_49ef90514ebe7ffa9e1cd36d98b96edc5551579c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7fd91ec2730fdaa82906aad32a3f3d3e574bae56">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.8.0_380d14b4024aa8f3d22cd3d5262d4588e69dc1a6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_362f4f2ca56deaaa49063cdd7c76a8106d18493d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="363a20f1d25336e827dd24020f2ecdc42d62638f">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.8.0_495cdc2fbe0eeaa52c30fe4f0527ebedc904e110/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="74ac7cbcf0de4a88e59612dc3a9e3f9e71acb4ca">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.8.0_3a1edee1dc525b6d2c1d638c871c1373a6422241/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b4671be3d1288bf4e5f527cd33e42909fbe4ecc6">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.8.0_384da10610463059393f393f72df7b84f4f42bdf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_d87772d250648eee6b89ee3e020270882edaf1d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="20a3c4e355150c15c13dd58045d43ad0c717d916">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.8.0_516770d74eac6cb7a878a70b68eaf192ef5b104f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_e53237e5a4ea6f625f0d75849058254027dcbc0d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_1f388ba6c9bfdb6c1a56a80834e5f7b646352dcb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4438b1a7848a7c571122ba618aa1304514aabee6">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.8.0_8028b38cb1962c0f1c0d233e2f9a1d96f6456e94/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="20c28009a8fc4efaca36acd94ce39f7d311b99d2">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a1d804c4c8b1421b469be3543366f62155e81808/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0b8e087da59c0b062c33f49a335e59f907086da2">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.8.0_451c740cc45ec187a9137638c8b16e09e5c66c24/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3f8f779a22cbb4c4d0759467a4f1011bb5252970">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.8.0_41e542981f119cd7324ad1792f686a4180f679a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_b732cc54e96663660eada28144dbbeb5a39c2235/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a7a04d6b7c01e569a285fa627cf64f5b05295906">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.8.0_a13988c4ceb6dc278fa4559c94f92cefe2b8dcaa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee5304fd374e0b4ebf6b42d4037fbfb2c5336511">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.8.0_0f8e932e17707fdb4270e72c2dad811ed3a4a0f0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.8.0_a86e281243f281a710b1c61409093da7dad4ef10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3daa7a9c9009fd386872a84c177a76979bdcafd6">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.8.0_f38f526e4e7c806a53a8a021c04edf65896955dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="00d358528c5a8731a6e19bca910cbb3fd755ee31">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-9.8.0_21a980c9851f8c7deaf9d031158582dee289a4f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a972970c8beddb69c198f61f3fc55f0606a7dfe3">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.8.0_96d77742593ef2fa779c0913dfa098772240aaa7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.8.0_9e3d124d2c87c7bbd7f84345f4f8aa0553123989/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0b53c4b90654b67ee3892a8e2e7b819c083ab7a6">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.8.0_72b4253eb25f4f5ae76fc62e8ad53956b4d0a23e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="122ec9237acd8a57d974b9d529987f1ee6ca5aea">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.8.0_14a5b176cf86c742a1293c86f8649d84d012be3c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a2537b11ae24b42172d34e2a613fc0b903c56158">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-9.8.0_19937abd28ba28726f73182076cec15178b0e2c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.8.0_3611f280134aa7589335cc6259a6cb3a0ad8f326/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e56f31b23ddb067f95f01255295167db7c798612">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.8.0_7125d5be6d0f3cb998a58679598070fcfe70eece/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbb3885c40e431cd2b0dc69c0cab2bf6d5da7b43">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.8.0_4807624c47ad834827d7bbbb7eae8e065b86fdfe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="055eed08c9cff50cac0db69c74c4d9ff7aef3d84">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-9.8.0_6b442b80a3a33b1b8d7c9f4864204e0e5dfac60d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9dae58326f6f6a515022468cce56dd04ec3b9fdb">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.8.0_32b746c3192bf2b02ebeb72970b9f56c393801f0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_959180f4d036c31bf8d0f564638bb90a2b6cabbf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="910c013c511f752c4bbe24c5f492f669f4a3ccc0">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.8.0_6c9d70b1881760fe699d4773e3786fd57cdf9027/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a30aea7df545072ad3c06f56b2efc13e67222140">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.8.0_7e7abfff7f40568dfc6a9f2972f159dc34223217/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_87e6f5b27c5f85f3cd3b5a873a4db6bbc33eaad3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.1_470d8284fbde7a0c8f3510196d3fa3300fe4e9e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="289cad663c288ce965463cb9ece8b35cc7de0fac">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.8.0_b090186e5b3e9ca77580b0b342567b13a32f395b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.1_cc84e2d27d94d652b3eed3746bb73ec5f12a18a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="03df48d3713661d66ad024b1e406259a4c26fcac">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.8.0_9588a79934a88b1c3cdd10e94a7d78d72745e199/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f47ede9561595584dca71104baa0fecb36dda87">
+        <dex dex="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.8.0_16dcda65699f2f4b5fab89dbdb4f41b3c62963e5/classes.dex" />
+    </item>
+
+</items>
