@@ -152,6 +152,10 @@
         "source": "/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
+        "merged": "/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/res/merged/debug/layout/list_element.xml",
+        "source": "/Users/markdillman/AndroidStudioProjects/DBTestApp/app/src/main/res/layout/list_element.xml"
+    },
+    {
         "merged": "/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
         "source": "/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/layout/support_simple_spinner_dropdown_item.xml"
     },

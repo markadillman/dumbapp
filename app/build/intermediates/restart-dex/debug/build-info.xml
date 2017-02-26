@@ -5,40 +5,47 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="78244277715319"
+    timestamp="111400202350495"
     token="-5012335832412149324"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="181" />
-    <task
-        name="instant-run-dex"
         duration="0" />
     <task
+        name="instant-run-dex"
+        duration="11" />
+    <task
         name="instant-run-transform"
-        duration="21" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1" />
+        duration="0" />
 
     <artifact
-        location="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-        type="DEX" />
+        location="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="76509148191618"
+        timestamp="110573734878220"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="78244277715319"
+        timestamp="110783297129536"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
             type="DEX" />
+    </build>
+    <build
+        timestamp="111400202350495"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
