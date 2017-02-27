@@ -32,6 +32,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CursorAdapter;
+import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
 
@@ -56,13 +57,16 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     private Button mButton;
     private Cursor mSQLCursor;
     private SimpleCursorAdapter mSQLCursorAdapter;
+    private ListView mSQLList;
     private Location mLastLocation;
+    private Location curLocation;
     private LocationListener mLocationListener;
     private TextView mLatText;
     private TextView mLonText;
     private static final int LOCATION_PERMISSION_RESULT = 24;
     private CoordinateSet currentCoords;
-
+    private CoordinateSet defaultCoords;
+    private String TAG = "NavDB";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,19 +85,17 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         mLatText = (TextView)findViewById(R.id.templat);
         mLonText = (TextView)findViewById(R.id.templon);
         currentCoords = new CoordinateSet();
+        defaultCoords = new CoordinateSet();
 
         mLocationRequest = LocationRequest.create();
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         mLocationRequest.setInterval(5000);
         mLocationRequest.setFastestInterval(5000);
 
-
         mLocationListener = new LocationListener() {
                 @Override
                 public void onLocationChanged(Location location) {
                     if (location != null) {
-                        mLonText.setText(String.valueOf(location.getLongitude()));
-                        mLatText.setText(String.valueOf(location.getLatitude()));
                         setCoordinatePair(currentCoords,location);
                     }
                 }
@@ -109,15 +111,50 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         mButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                //if permits are valid, enter last known location
+                if (validPerms() && mLastLocation != null){
+                    //if current coordinates are still stuck on no-permit, update to last location
+                    if (currentCoords.latitude==defaultCoords.latitude && currentCoords.longitude==defaultCoords.longitude) {
+                        setCoordinatePair(currentCoords, mLastLocation);
+                    }
+                }
+                //else return to default
+                else {
+                    setCoordinatePair(currentCoords,null);
+                }
                 if (mSQLDB != null){
                     ContentValues vals = new ContentValues();
                     vals.put(DBContract.DemoTable.COLUMN_NAME_DEMO_STRING, ((EditText)findViewById(R.id.user_string)).getText().toString());
                     vals.put(DBContract.DemoTable.COLUMN_NAME_DEMO_LAT,currentCoords.latitude);
                     vals.put(DBContract.DemoTable.COLUMN_NAME_DEMO_LON,currentCoords.longitude);
                     mSQLDB.insert(DBContract.DemoTable.TABLE_NAME,null,vals);
+                    populateList();
                 }
             }
         });
+        populateList();
+    }
+
+    private void populateList(){
+        if(mSQLDB!=null){
+            try {
+                if(mSQLCursorAdapter!=null && mSQLCursorAdapter.getCursor()!=null){
+                    if(!mSQLCursorAdapter.getCursor().isClosed()){
+                        mSQLCursorAdapter.getCursor().close();
+                    }
+                }
+                mSQLCursor = mSQLDB.rawQuery("select * from demo",null);
+                mSQLList = (ListView) findViewById(R.id.sql_list);
+                mSQLCursorAdapter = new SimpleCursorAdapter(this,R.layout.list_element,
+                        mSQLCursor,new String[]{DBContract.DemoTable.COLUMN_NAME_DEMO_STRING,
+                        DBContract.DemoTable.COLUMN_NAME_DEMO_LAT,DBContract.DemoTable.COLUMN_NAME_DEMO_LON},
+                        new int[]{R.id.elemstring,R.id.elemlat,R.id.elemlon},0);
+                mSQLList.setAdapter(mSQLCursorAdapter);
+
+            } catch (Exception e) {
+                Log.d(TAG, "Error loading data from database.");
+            }
+        }
     }
 
     @Override
@@ -158,13 +195,12 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         if (requestCode == LOCATION_PERMISSION_RESULT) {
-            if (grantResults.length > 0){
+            if (validPerms()){
                 LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient,mLocationRequest,mLocationListener);
                 mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
                 getCoordinates();
             }
         }
-        //else getCoordinates();
     }
 
     private boolean validPerms(){
@@ -193,23 +229,24 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
             mLonText.setText("Invalid perms or bad location");
         }
         else {
-                mLonText.setText(String.valueOf(mLastLocation.getLongitude()));
-                mLatText.setText(String.valueOf(mLastLocation.getLatitude()));
+                //mLonText.setText(String.valueOf(mLastLocation.getLongitude()));
+                //mLatText.setText(String.valueOf(mLastLocation.getLatitude()));
         }
     }
 
-    private boolean setCoordinatePair(CoordinateSet coords, Location loc){
+    private void setCoordinatePair(CoordinateSet coords, @Nullable Location loc){
         if (!validPerms()){
             coords.latitude = 44.5;
             coords.longitude = -123.2;
-            return true;
         }
         else if (loc != null) {
             coords.latitude = loc.getLatitude();
             coords.longitude = loc.getLongitude();
-            return true;
         }
-        else return false;
+        else {
+            coords.latitude = 44.5;
+            coords.longitude = -123.2;
+        }
     }
 
     final class DBContract {
@@ -243,12 +280,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         @Override
         public void onCreate(SQLiteDatabase db){
             db.execSQL(DBContract.DemoTable.SQL_CREATE_DEMO_TABLE);
-
-            ContentValues testValues = new ContentValues();
-            testValues.put(DBContract.DemoTable.COLUMN_NAME_DEMO_STRING,"Banana Splits");
-            testValues.put(DBContract.DemoTable.COLUMN_NAME_DEMO_LAT,23.3);
-            testValues.put(DBContract.DemoTable.COLUMN_NAME_DEMO_LON,69.7);
-            db.insert(DBContract.DemoTable.TABLE_NAME,null,testValues);
         }
 
         @Override

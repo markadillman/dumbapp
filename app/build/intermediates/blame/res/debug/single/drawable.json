@@ -228,6 +228,10 @@
         "source": "/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.8.0/res/drawable/cast_ic_notification_forward10.xml"
     },
     {
+        "merged": "/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/res/merged/debug/drawable/blackbox.xml",
+        "source": "/Users/markdillman/AndroidStudioProjects/DBTestApp/app/src/main/res/drawable/blackbox.xml"
+    },
+    {
         "merged": "/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_mute.xml",
         "source": "/Users/markdillman/AndroidStudioProjects/DBTestApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.8.0/res/drawable/cast_ic_expanded_controller_mute.xml"
     },

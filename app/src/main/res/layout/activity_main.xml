@@ -35,12 +35,11 @@
                 <EditText
                     android:id="@+id/user_string"
                     android:inputType="text"
-                    android:text="User Text"
                     android:textAlignment="center"
                     android:ems="1"
-                    android:layout_weight=".5"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_width="266dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/blackbox"/>
 
             </LinearLayout>
 
@@ -57,7 +56,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
             <TextView
                 android:orientation="vertical"
                 android:id="@+id/tempstring"
@@ -66,7 +65,10 @@
                 android:layout_weight=".33333"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingTop="12dp" />
+                android:paddingTop="6dp"
+                android:text="String"
+                android:paddingBottom="6dp"
+                android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color" />
             <TextView
                 android:orientation="vertical"
                 android:id="@+id/templat"
@@ -75,7 +77,10 @@
                 android:layout_weight="0.34"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingTop="12dp" />
+                android:paddingTop="6dp"
+                android:text="Latitude"
+                android:paddingBottom="6dp"
+                android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color" />
             <TextView
                 android:orientation="vertical"
                 android:layout_weight=".33333"
@@ -86,8 +91,15 @@
                 android:ems="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingTop="12dp"/>
-
+                android:paddingTop="6dp"
+                android:text="Longitude"
+                android:paddingBottom="6dp"
+                android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color" />
         </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sql_list"
+            android:fadingEdge="horizontal|vertical" />
     </LinearLayout>
 </RelativeLayout>
